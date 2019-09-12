@@ -1,5 +1,3 @@
-# Resume
-
 Tyler Foreman 
 
 Charlotte NC
