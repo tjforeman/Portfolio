@@ -1,4 +1,13 @@
- [[redirects]]
+
+[build]
+    base = "resume/"
+    publish = "resume/build/"
+    command = "yarn build"
+
+[[redirects]]
     from = "/*"
     to = "/index.html"
-status = 200 
+    status = 200
+
+[context.production]
+    command = "yarn build"
