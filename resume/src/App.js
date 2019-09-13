@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import mixpanel from "./helpers/mixpanel";
 
 function App() {
   return (
@@ -10,5 +11,6 @@ function App() {
     </div>
   );
 }
+mixpanel.track("viewed landing");
 
 export default App;
