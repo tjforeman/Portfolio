@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
+import mixpanel from "./helpers/mixpanel";
+import {Route} from 'react-router-dom'
+import About from './views/About'
+import Landing from './views/Landing'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Wussup world?</p>
-      </header>
+    <div classname='App-header'>
+      <Route exact path='/' component={Landing} />
+      <Route exact path='/about' component={About} />
     </div>
   );
 }
+mixpanel.track("viewed landing");
 
 export default App;
